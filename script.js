@@ -1,7 +1,7 @@
 var welcome;
 var text;
 var utterance;
-welcome = addEventListener('focus',() =>{
+welcome = addEventListener('load',() =>{
     var text = "Welcome Can you please switch on the light... ?";
     var utterance = new SpeechSynthesisUtterance(text);
     speechSynthesis.speak(utterance);
